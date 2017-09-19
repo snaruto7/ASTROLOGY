@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>15BCE0937</title>
+</head>
+
+<body>
+    
+    <div class="app">
+        <h1>ASTROLOGY</h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        ENTER YOUR NAME: <input type="text" name="name" placeholder="Name"/>
+        <br />
+        <br />
+        <br />
+        ENTER YOUR DATE OF BIRTH: <br />
+        MONTH: <select name="month" id="month">
+            <option name="m1">January</option>
+            <option name="m1">February</option>
+            <option name="m3">March</option>
+            <option name="m4">April</option>
+            <option name="m5">May</option>
+            <option name="m6">June</option>
+            <option name="m7">July</option>
+            <option name="m8">August</option>
+            <option name="m9">Semptember</option>
+            <option name="m10">October</option>
+            <option name="m11">November</option>
+            <option name="m12">December</option>
+        </select>
+        &nbsp;
+        <select name="date" id="date">
+            <option name="1">1</option>
+            <option name="2">2</option>
+            <option name="3">3</option>
+            <option name="4">4</option>
+            <option name="5">5</option>
+            <option name="6">6</option>
+            <option name="7">7</option>
+            <option name="8">8</option>
+            <option name="9">9</option>
+            <option name="10">10</option>
+            <option name="11">11</option>
+            <option name="12">12</option>
+            <option name="13">13</option>
+            <option name="14">14</option>
+            <option name="15">15</option>
+            <option name="16">16</option>
+            <option name="17">17</option>
+            <option name="18">18</option>
+            <option name="19">19</option>
+            <option name="20">20</option>
+            <option name="21">21</option>
+            <option name="22">22</option>
+            <option name="23">23</option>
+            <option name="24">24</option>
+            <option name="25">25</option>
+            <option name="26">26</option>
+            <option name="27">27</option>
+            <option name="28">28</option>
+            <option name="29">29</option>
+            <option name="30">30</option>
+            <option name="31">31</option>
+        </select>
+        &nbsp;
+        <select name="year">
+            <option name="1995">1995</option>
+            <option name="1996">1996</option>
+            <option name="1997">1997</option>
+            <option name="1998">1998</option>
+            <option name="1999">1999</option>
+            <option name="2000">2000</option>
+            <option name="2001">2001</option>
+            <option name="2002">2002</option>
+            <option name="2003">2003</option>
+            <option name="2004">2004</option>
+            <option name="2005">2005</option>
+            <option name="2006">2006</option>
+            <option name="2007">2007</option>
+            <option name="2008">2008</option>
+            <option name="2009">2009</option>
+            <option name="2010">2010</option>
+            <option name="2011">2011</option>
+            <option name="2012">2012</option>
+            <option name="2013">2013</option>
+            <option name="2014">2014</option>
+            <option name="2015">2015</option>
+            <option name="2016">2016</option>
+            <option name="2017">2017</option>
+        </select><br /><br /><br />
+        <input type="submit" value="My sign " onclick="sign()"/>
+        <input type="submit" value="My traits" onclick="traits()" />
+
+        <p id="sign"></p>
+        <p id="trait"></p>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
