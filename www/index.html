@@ -51,11 +51,11 @@
         <br />
         <br />
         <br />
-        ENTER YOUR NAME: <input type="text" name="name" placeholder="Name"/>
+        <b>ENTER YOUR NAME:</b> <input type="text" name="name" placeholder="Name"/>
         <br />
         <br />
         <br />
-        ENTER YOUR DATE OF BIRTH: <br />
+        <b>ENTER YOUR DATE OF BIRTH:</b> <br />
         MONTH: <select name="month" id="month">
             <option name="m1">January</option>
             <option name="m1">February</option>
@@ -105,7 +105,7 @@
             <option name="31">31</option>
         </select>
         &nbsp;
-        <select name="year">
+        <select name="year" id="year">
             <option name="1995">1995</option>
             <option name="1996">1996</option>
             <option name="1997">1997</option>
@@ -130,8 +130,8 @@
             <option name="2016">2016</option>
             <option name="2017">2017</option>
         </select><br /><br /><br />
-        <input type="submit" value="My sign " onclick="sign()"/>
-        <input type="submit" value="My traits" onclick="traits()" />
+        <input class="submit" type="submit" value="My sign " onclick="sign()"/>
+        <input class="submit" type="submit" value="My traits" onclick="traits()" />
 
         <p id="sign"></p>
         <p id="trait"></p>
