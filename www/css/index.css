@@ -52,7 +52,7 @@ body {
     width: 50%;                   /* text area width */
     text-align:center;
     padding:20px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin: 50px 0px 0px 330px;                               /* offset horizontal: half of text area width */
+    margin: 50px 0px 0px 50px;                               /* offset horizontal: half of text area width */
     background-color: lightblue;
 }
 body{
