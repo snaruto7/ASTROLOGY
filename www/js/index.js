@@ -150,7 +150,7 @@ function traits(){
         document.getElementById("sign").innerHTML=Aquarius;
     }
     else if(x=="February" && (y>=19 && y<=29 ) && (z%400==0 || z%4==0)){
-        document.getElementById("trait").innerHTML=Pisces;
+        document.getElementById("sign").innerHTML=Pisces;
     }
     else if(x=="February" && (y>=19 && y<=28) || x=="March" && (y>=1 && y<=20) ){
         document.getElementById("sign").innerHTML=Pisces;
